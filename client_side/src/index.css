@@ -185,8 +185,8 @@ button {
   box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
   background: #058B8C;
   border: 1px solid #058B8C;
-  font-size: 13px;
-  height: 31px;
+  font-size: 15px;
+  /* height: 28px; */
   padding: 0 4px;
   text-align: center;
   width: 70%;
@@ -718,3 +718,77 @@ button:hover {
     font-size: 1em; /* Adjusted font size for text on smaller screens */
   }
 }
+/* review */
+.review{
+  /* background: aqua; */
+  width: 100%;
+  height: 40vh;
+  /* padding: 2%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4%;
+}
+
+
+.review .card{
+  /* background: red; */
+  height: 200px;
+  width: 310px;
+  padding: .8%;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(20, 19, 19, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.card .r-icons{
+  color: #058B8C;
+  font-size: 24px;
+
+}
+
+.card .review-txt h5{
+  font-weight: bold;
+  color: #058B8C;
+  font-size: 18px;
+  padding: 0;
+
+  font-family: Rubik;
+}
+
+.card .review-txt p{
+  font-family: Rubik;
+  line-height: 1.3;
+  padding: 1% 0;
+  
+  letter-spacing: .8px;
+}
+
+.review .swiper-button-next,
+.review .swiper-button-prev{
+    color: #058B8C;
+}
+
+.review .swiper-button-next{
+    right: 0;
+}
+
+.review .swiper-button-prev{
+    left: 0;
+}
+
+.review .swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+    background: #058B8C;
+}
+.review4{
+  text-align: center;
+  
+}
+.review4:hover{
+  color: #058B8C;
+  transition: all 0.3s;
+}
+/* media query for review */

@@ -7,7 +7,7 @@ import {BsFillTelephoneFill} from "react-icons/bs"
 const Footer = () => {
   return (
     <>
-      <section className="contact-short">
+      {/* <section className="contact-short">
         <div className="grid grid-two-column">
           <div>
             <h3>Ready to get started?</h3>
@@ -20,7 +20,7 @@ const Footer = () => {
             </NavLink>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* footer section  */}
       <footer>
@@ -52,10 +52,10 @@ const Footer = () => {
               <ul>
               <a href="tel:+923334519926"><BsFillTelephoneFill />+923334519926</a>
                 <li><a href="mailto:qaisernadeem042@gmail.com">qaisernadeem042@gmail.com</a></li>
-                <form className='form_footer' action=''>
+                {/* <form className='form_footer' action=''>
                   <input type='text'/>
                   <input type='submit' value="submit"/>
-                </form>
+                </form> */}
               </ul>
 
             </div>

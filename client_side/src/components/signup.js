@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import images55 from "../pictures/photos/Regi.jpg"
 
+
+
+// import image0 from "./pictures/photos/blue_cv.jpg";
 
 
 const Signup = () => {
@@ -59,7 +63,7 @@ const Signup = () => {
     <>
       <div className="inner2">
         <div className="image-holder">
-          <img src="img1.jpg" alt="image" />
+          <img src={images55} alt="image" />
         </div>
         <form onSubmit={PostData} method='POST'>
           <h3>Registration Form</h3>

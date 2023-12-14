@@ -6,9 +6,18 @@ import image2 from "./pictures/photos/dollar.svg";
 import image3 from "./pictures/photos/experience-team.svg";
 import Image4 from "./pictures/photos/Rectangle 3.svg";
 import image5 from "./pictures/photos/image 15 (1).png";
-// import image6 from "./pictures/photos/image 11 (1).png"
 import image7 from "./pictures/photos/image 16.png"
-//  import bannerimg from "./pictures/photos/logo_image_blue.svg";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Mousewheel, Keyboard,A11y, EffectCoverflow } from 'swiper/modules';
+// import { FreeMode } from 'swiper/modules';
+// import data for review 
+import data from './data';
+
+
 
 
 const Home = () => {
@@ -128,8 +137,59 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+ {/* review section start  */}
+ <h2 className='review4'>REVIEWS</h2>
+ <section className="review">
+        {/* slider  */}
+        <Swiper
+         slidesPerView={3}
+         spaceBetween={30}
+         freeMode={true}
+         pagination={{
+           clickable: true,
+         }}
+         modules={[ Pagination,Navigation,Mousewheel,Keyboard,A11y, EffectCoverflow]}
+        cssMode={true}
+        navigation={true}
+        mousewheel={true}
+        keyboard={true}
+        effect="slide"  // Set the effect to 'slide'
+      direction="horizontal"  // Set the direction to 'horizontal'
+    
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className="mySwiper"
+      >
+      {data.map((person, index)=>{
+        return(
+          <SwiperSlide>
+          <div className="card">
+        <div className="r-icons">
+            <i className='bx bxs-star'></i>
+            <i className='bx bxs-star'></i>
+            <i className='bx bxs-star'></i>
+            <i className='bx bxs-star'></i>
+            <i className='bx bxs-star-half' ></i>
+        </div>
+        <div className="review-txt">
+            <h5>{person.name}</h5>
+            <p>{person.description}</p>
+
+        </div>
+    </div>
+    </SwiperSlide>
+        )
+      })}
+
+    </Swiper>
+
+      </section>
+      {/* review section end  */}
     </>
   )
+
+  
+  
 }
 
 export default Home;
