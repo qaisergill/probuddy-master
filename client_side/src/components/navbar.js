@@ -34,11 +34,11 @@ const Navbar = () => {
               About
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink className="navbar-link" onClick={() => setOpenMenu(true)} to="/services">
               Services
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink className="navbar-link" onClick={() => setOpenMenu(true)} to="/contact">
               Contact
